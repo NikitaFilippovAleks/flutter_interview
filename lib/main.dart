@@ -9,10 +9,25 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text('Hello World!'),
+          child: SizedBox(
+            width: 300,
+            height: 400,
+            child: Container(
+              color: Colors.blue[200],
+              child: Align(
+                alignment: Alignment.topRight,
+                child: IconButton(
+                  style: IconButton.styleFrom(backgroundColor: Colors.pink[100]),
+                  icon: const Icon(Icons.arrow_back),
+                  onPressed: () {
+                  },
+                ),
+              ),
+            ),
+          ),
         ),
       ),
     );
