@@ -21,7 +21,7 @@ class MainApp extends StatelessWidget {
                 alignment: Alignment.topRight,
                 child: IconButton(
                   style: IconButton.styleFrom(backgroundColor: Colors.pink[100]),
-                  icon: const Icon(Icons.arrow_back),
+                  icon: const Icon(Icons.radio_button_checked),
                   onPressed: () {
                   },
                 ),
